@@ -1,0 +1,584 @@
+
+@font-face{
+  font-family: 'Righteous', cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+}
+
+html{
+  font-size: 100%;
+}
+
+body{
+line-height: 1rem;
+color: black;
+background:  url(../image/D-13-resize-smaller.jpg) #C4D9DE;
+height: 100%;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+header {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  font-size: 1.2rem;
+  color: white;
+  line-height: unset;
+  background-color: #0E9BC2;
+  padding: 2.0rem;
+  grid-area: header;
+  font-size: 2.5rem;
+  font-family:'Righteous';
+  color: black;
+  margin: 1rem 0;
+
+  width: 100%;
+  height: 7rem;
+}
+
+footer{
+  grid-area: footer;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+background-color: #0E9BC2;
+color: black;
+padding: 0.5rem 0rem 0.5rem 0.5rem;
+margin: 1rem 0rem 0.5rem;
+}
+
+footer p {padding: 1rem 0rem 1rem 0rem; font-weight: 600; margin: 0rem 0rem 1rem 1rem;}
+
+
+header h1{
+  font-size: 2.5rem;
+  font-family:'Righteous';
+  color: black;
+  margin: 2rem 2rem;
+  font-weight: bold;
+}
+
+body h2{
+  font-family:'Righteous';
+font-size: 1.5rem;
+color: black;
+margin: 1rem 0;
+font-weight: bold;
+grid-area: h2;
+}
+
+body h3{
+  font-size: 1rem;
+  
+  margin-bottom: 1rem;
+  }
+
+
+  body h4{
+
+    font-size: 100%;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+ header a{
+
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+ }
+
+#wrapper{
+border-radius: 25px;
+background-color: white;
+width: 70%;
+margin: 0 auto;
+box-shadow: 0px 5px 5px black;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 0 10px;
+grid-template-areas: 
+"header header header"
+"nav nav nav"
+"main main main"
+"footer footer footer"
+}
+
+
+/*Main and Grid-layout */
+#historik-main, #index-main, #gasthamn-main, #turist-main,#member-main,#contact-main, #english-main{
+  grid-area: main;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 1000px;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+line-height: 1.5rem;
+  
+}
+
+#index-main{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:  0 5rem;
+  grid-template-areas: 
+  "info news"
+  "info news"
+  "info news"
+  "info news"
+  }
+
+#gasthamn-main{
+  grid-gap:  0 25rem;
+  grid-template-areas: 
+  "gastinfo  priser"
+  "gastinfo  priser"
+  "gastinfo  priser"
+  }
+
+    
+    #historik-main{
+  grid-gap:  3rem 0;
+  grid-template-areas: 
+  "h2 h2"
+  "ekstabostory ekstabostory "
+  "ekstabostory ekstabostory"
+  "stormbystory namnforklaring "
+
+  
+
+  }
+
+  #contact-main{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:  0 20rem;
+    grid-template-areas: 
+    "contactinfo contactform"
+    "contactinfo contactform"
+    "contactinfo contactform"
+    }
+  
+    #turist-main{
+      grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:  0 2rem;
+    grid-template-areas: 
+    "h2 h2"
+    "Ekstakusten resturang"
+    " badplatser oarna"
+    "skeppsattning ."
+    }
+
+    #member-main{
+      grid-gap:  0 2rem;
+      grid-template-areas: 
+      "memberinfo stugor"
+      "memberlist stugor"
+  
+    }
+    #english-main{
+    grid-gap:  0 5rem;
+    grid-template-areas: 
+    "enginfo strandstugor"
+    
+    
+    }
+
+
+
+
+  /*Index*/
+
+#info{
+grid-area: info;
+margin: 0rem 1rem 3rem 1rem;
+
+
+}
+
+#news figure em{
+  font-style: italic;
+  margin: 2rem 1rem 2rem 0rem;
+}
+
+#news{
+  grid-area: news;
+  margin: 0rem 1rem 3rem 1rem;
+  
+}
+
+#storyone{margin-bottom: 3rem;}
+
+#news h3, #info h3 {font-weight: 600;}
+
+#news h4, #info h4 {font-weight: 400; font-style: italic;}
+
+/*History */
+#ekstabostory{
+  grid-area: ekstabostory;
+  margin-left: 2rem;
+  
+      }
+  
+      #ekstabostory h3,  #stormbystory h3, #namnforklaring h3 {font-weight: bolder;}
+  
+      #stormbystory{
+  grid-area: stormbystory;
+  max-width: 75%;
+  margin: 0rem 0rem 1rem 2rem;
+      }
+  
+      #namnforklaring {
+        grid-area: namnforklaring;
+        margin-bottom: 2rem;
+      }
+
+      #historik-main h2{margin-left: 2rem;}
+/*Nav */
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color:#E6E6FF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+ 
+ nav li {
+  float: left;
+  
+ }
+
+ nav li a {
+  font-family:'Righteous';
+  font-weight: bold;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+
+li a:hover {
+  background-color: #ffffff;
+}
+
+
+
+nav{
+  background-color:#ffffff;
+  grid-area: nav;
+}
+
+
+
+
+
+  /*Bilder */
+
+  #skepp, #roof, #folksamling, #dock, #strandstugor, #sunset, #stugor{border-radius: 20px; max-width: 100%;  padding: 2px;}
+
+  
+  #roof{
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+   #folksamling{
+height: 400px;
+width: 300px;
+
+
+}
+#dock{
+  margin: 0rem 0rem 5px 10px;
+}
+#strandstugor{
+  grid-area: strandstugor;
+margin-top: 1rem;
+margin-right: 1rem;
+  
+}
+#konrad{
+  max-width: 100%;
+  float: right; ;
+ text-align: right;
+ margin: 0.5rem;
+} 
+
+#sunset{
+ margin: 1rem 0rem;
+}
+
+#stugor{
+  grid-area: stugor;
+  width: 600px;
+  margin-top: 1rem;
+margin-right: 1rem;
+}
+
+/* Gasthamn */
+  #priser{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 12rem;
+    height: 25rem;
+    background-color:#0E9BC2;
+    grid-area: priser;
+    margin: 3rem 2rem 3rem 2rem;
+    box-shadow: 0px 1px 1px black;
+    
+    
+  }
+  #priser h3{
+    font-weight: bold;
+  }
+
+#extra{
+font-style: italic;
+margin-top: 1rem;
+}
+#gastinfo{
+  margin-left: 1rem;
+  grid-area: gastinfo;
+  
+}
+
+#temp{
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/*Turist */
+#Ekstakusten{
+  grid-area: Ekstakusten;
+}
+#skeppsattning{
+  grid-area: skeppsattning;
+}
+#badplatser{
+grid-area: badplatser;
+} 
+#resturang {
+  grid-area: resturang;
+}  
+#oarna {
+    grid-area: oarna;
+  }
+
+  #Ekstakusten, #skeppsattning, #badplatser, #resturang, #oarna{
+    border: 1px solid #0E9BC2;
+      border-radius: 4px;
+      box-shadow: 0px 1px 1px black;
+      padding: 1rem;
+  margin: 0rem 1rem 3rem 1rem;
+  }
+
+  #turist-main h3{
+    font-weight: bold;
+  }
+
+  /*Member */
+  #member-main h2{ padding-left: 1rem;}
+
+  #memberinfo h3, #memberlist h3{ font-weight: bold;}
+
+
+  #member-main th {
+    padding: 0.5rem 0.5rem 1rem 0rem;
+    text-align: left;
+    background-color: #0E9BC2;
+    color: black;
+    border: 1px solid #0E9BC2; 
+  }
+   #member-main tr,#member-main td{
+     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 1px solid #0E9BC2;
+  }
+  #memberinfo{
+    width: 30rem;
+    grid-area: memberinfo;
+    padding: 0rem 0rem 2rem 2rem;
+  }
+
+  #memberlist{
+    grid-area: memberlist;
+    padding-left: 2rem;
+  }
+  
+
+  
+/*Contact */
+table{
+ width: 30rem;
+ border-collapse: collapse;  
+}
+ 
+#meddelande, #rubrik, #epost, #phonenumber{
+  display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+width: 15rem;
+}
+
+#type,  #contact{
+  display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+width: 5rem;
+height: 3rem;
+} 
+
+label{font-weight: bold;}
+
+textarea{resize: none;}
+
+#submit{
+  background-color:#ffffff;
+color: black;
+padding: 10px 18px;
+margin: 1rem 0;
+border: none;
+border-radius: 4px;
+}
+
+#contactform{
+  background-color: #0E9BC2;
+grid-area: contactform;
+width: 20rem;
+height: 35rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 3rem 2rem 2rem 2rem;
+}
+
+#contactinfo{
+grid-area: contactinfo;
+border: 1px solid #0E9BC2;
+  border-radius: 4px;
+width: 20rem;
+height: 10rem;
+margin: 3rem 0rem 0rem 1rem;
+border-radius: 4px;
+padding: 20px;
+
+}
+
+
+/*English */
+
+#enginfo{
+  grid-area: enginfo;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+/*Smaller screen*/
+@media(max-width: 1650px){
+  #index-main{
+grid-template-columns: 1fr;
+grid-gap:  0 5rem;
+grid-template-areas: 
+"info"
+"news"
+    }
+
+    #turist-main{
+    grid-template-columns: 1fr;
+    grid-gap:  0 50px;
+    grid-template-areas: 
+    "h2"
+    "Ekstakusten" 
+    "resturang" 
+    "oarna"
+    "badplatser"
+    "skeppsattning"
+    }
+
+    #gasthamn-main{
+      grid-template-columns: 1fr;
+      grid-gap:  0 20px;
+      grid-template-areas: 
+      "gastinfo" 
+      "priser"
+
+    }
+
+
+#contact-main{
+  grid-template-columns: 1fr;
+  grid-gap:  0 5px;
+  grid-template-areas: 
+  "contactinfo"
+  "contactform"
+}
+
+#contactinfo, #contactform{
+
+  width: 20rem;
+  margin: 2rem 2rem 2rem 2rem;
+}
+#historik-main{
+grid-template-columns: 1fr ;
+grid-gap:  3rem 0;
+grid-template-areas: 
+"h2"
+"ekstabostory"
+"ekstabostory"
+"stormbystory" 
+"namnforklaring"
+
+}
+
+#namnforklaring {margin-left: 2rem;}
+  
+
+
+#english-main{
+grid-template-columns: 1fr;
+grid-gap:  0 5rem;
+grid-template-areas: 
+"enginfo"
+}
+
+#member-main{
+ 
+  grid-template-columns: 1fr;
+  grid-gap:  0 2rem;
+  grid-template-areas: 
+  "memberinfo"
+  "memberlist"
+  "stugor"
+
+}
+
+#gastinfo{margin-left: 1rem;}
+#stugor,#strandstugor{
+  margin: 1rem 0rem 1rem 2rem;
+}
+
+#english-main{
+
+grid-template-columns: 1fr;
+grid-gap:  0 5rem;
+grid-template-areas: 
+"enginfo "
+"strandstugor"
+
+
+}
+
+
+#priser{margin: 2rem 2rem 2rem 2rem;
+height: 10rem; width: 20rem;}
+}
